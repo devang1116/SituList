@@ -8,12 +8,16 @@
 import SwiftUI
 
 @main
-struct ScrumDingerApp: App {
+struct ScrumDingerApp: App
+{
+    @StateObject private var modelData = ModelData()
     let persistenceController = PersistenceController.shared
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    var body: some Scene
+    {
+        WindowGroup
+        {
+            ContentView().environmentObject(modelData)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

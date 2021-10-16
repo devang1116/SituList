@@ -8,7 +8,8 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct ContentView: View
+{
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -16,30 +17,33 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
+    var body: some View
+    {
+        LandmarkList()
+        
+//        NavigationView {
+//            List {
+//                ForEach(items) { item in
+//                    NavigationLink {
+//                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                    } label: {
+//                        Text(item.timestamp!, formatter: itemFormatter)
+//                    }
+//                }
+//                .onDelete(perform: deleteItems)
+//            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    EditButton()
+//                }
+//                ToolbarItem {
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "plus")
+//                    }
+//                }
+//            }
+//            Text("Select an item")
+//        }
     }
 
     private func addItem() {
@@ -83,6 +87,11 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        
+        if #available(iOS 15.0, *) {
+            ContentView().environmentObject(ModelData()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext).previewInterfaceOrientation(.portrait)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

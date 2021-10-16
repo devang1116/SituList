@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB321DED271A9AE1003A7D00 /* FavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB321DEC271A9AE1003A7D00 /* FavButton.swift */; };
+		DB4F29B82718967800D2E3B2 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB4F29B72718967800D2E3B2 /* landmarkData.json */; };
+		DB4F29BA271896BE00D2E3B2 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F29B9271896BE00D2E3B2 /* Landmark.swift */; };
+		DB4F29BC27189CCA00D2E3B2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F29BB27189CCA00D2E3B2 /* ModelData.swift */; };
+		DB622F572719B1C40023C8B8 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB622F562719B1C40023C8B8 /* LandmarkRow.swift */; };
+		DB680F35271A79F00041D4C2 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB680F34271A79F00041D4C2 /* LandmarkDetail.swift */; };
+		DB6FF5642719B5AD009B0F3F /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF5632719B5AD009B0F3F /* LandmarkList.swift */; };
 		DB8996762718712A000D7091 /* ScrumDingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996752718712A000D7091 /* ScrumDingerApp.swift */; };
 		DB8996782718712A000D7091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996772718712A000D7091 /* ContentView.swift */; };
 		DB89967A2718712B000D7091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8996792718712B000D7091 /* Assets.xcassets */; };
@@ -16,6 +23,8 @@
 		DB89968C2718712C000D7091 /* ScrumDingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89968B2718712C000D7091 /* ScrumDingerTests.swift */; };
 		DB8996962718712C000D7091 /* ScrumDingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996952718712C000D7091 /* ScrumDingerUITests.swift */; };
 		DB8996982718712C000D7091 /* ScrumDingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996972718712C000D7091 /* ScrumDingerUITestsLaunchTests.swift */; };
+		DB8996A527187E1A000D7091 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996A427187E1A000D7091 /* ImageView.swift */; };
+		DB8996A727188037000D7091 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8996A627188037000D7091 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB321DEC271A9AE1003A7D00 /* FavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavButton.swift; sourceTree = "<group>"; };
+		DB4F29B72718967800D2E3B2 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		DB4F29B9271896BE00D2E3B2 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		DB4F29BB27189CCA00D2E3B2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		DB622F562719B1C40023C8B8 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		DB680F34271A79F00041D4C2 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		DB6FF5632719B5AD009B0F3F /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		DB8996722718712A000D7091 /* ScrumDinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumDinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8996752718712A000D7091 /* ScrumDingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumDingerApp.swift; sourceTree = "<group>"; };
-		DB8996772718712A000D7091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB8996772718712A000D7091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DB8996792718712B000D7091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB89967C2718712B000D7091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB89967E2718712B000D7091 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +64,8 @@
 		DB8996912718712C000D7091 /* ScrumDingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumDingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8996952718712C000D7091 /* ScrumDingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumDingerUITests.swift; sourceTree = "<group>"; };
 		DB8996972718712C000D7091 /* ScrumDingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumDingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB8996A427187E1A000D7091 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DB8996A627188037000D7091 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB622F532719B1130023C8B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB4F29B9271896BE00D2E3B2 /* Landmark.swift */,
+				DB4F29BB27189CCA00D2E3B2 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB622F542719B1240023C8B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB8996772718712A000D7091 /* ContentView.swift */,
+				DB8996A427187E1A000D7091 /* ImageView.swift */,
+				DB8996A627188037000D7091 /* MapView.swift */,
+				DB622F562719B1C40023C8B8 /* LandmarkRow.swift */,
+				DB6FF5632719B5AD009B0F3F /* LandmarkList.swift */,
+				DB680F34271A79F00041D4C2 /* LandmarkDetail.swift */,
+				DB321DEC271A9AE1003A7D00 /* FavButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB622F552719B12E0023C8B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB4F29B72718967800D2E3B2 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DB8996692718712A000D7091 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				DB8996752718712A000D7091 /* ScrumDingerApp.swift */,
-				DB8996772718712A000D7091 /* ContentView.swift */,
-				DB8996792718712B000D7091 /* Assets.xcassets */,
-				DB89967E2718712B000D7091 /* Persistence.swift */,
+				DB622F542719B1240023C8B8 /* Views */,
+				DB622F532719B1130023C8B8 /* Model */,
+				DB622F552719B12E0023C8B8 /* Resources */,
 				DB8996802718712B000D7091 /* ScrumDinger.xcdatamodeld */,
+				DB89967E2718712B000D7091 /* Persistence.swift */,
+				DB8996792718712B000D7091 /* Assets.xcassets */,
 				DB89967B2718712B000D7091 /* Preview Content */,
 			);
 			path = ScrumDinger;
@@ -239,6 +290,7 @@
 			files = (
 				DB89967D2718712B000D7091 /* Preview Assets.xcassets in Resources */,
 				DB89967A2718712B000D7091 /* Assets.xcassets in Resources */,
+				DB4F29B82718967800D2E3B2 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +315,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4F29BA271896BE00D2E3B2 /* Landmark.swift in Sources */,
+				DB8996A727188037000D7091 /* MapView.swift in Sources */,
 				DB89967F2718712B000D7091 /* Persistence.swift in Sources */,
 				DB8996782718712A000D7091 /* ContentView.swift in Sources */,
+				DB8996A527187E1A000D7091 /* ImageView.swift in Sources */,
+				DB4F29BC27189CCA00D2E3B2 /* ModelData.swift in Sources */,
 				DB8996762718712A000D7091 /* ScrumDingerApp.swift in Sources */,
 				DB8996822718712B000D7091 /* ScrumDinger.xcdatamodeld in Sources */,
+				DB622F572719B1C40023C8B8 /* LandmarkRow.swift in Sources */,
+				DB6FF5642719B5AD009B0F3F /* LandmarkList.swift in Sources */,
+				DB680F35271A79F00041D4C2 /* LandmarkDetail.swift in Sources */,
+				DB321DED271A9AE1003A7D00 /* FavButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrumDinger/Preview Content\"";
+				DEVELOPMENT_TEAM = S6QK8T6Z25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -456,6 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScrumDinger/Preview Content\"";
+				DEVELOPMENT_TEAM = S6QK8T6Z25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
